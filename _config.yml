@@ -1,0 +1,37 @@
+url: "http://kiever.github.io"
+baseurl:
+img_path: "/assets"
+
+# Site settings
+title: KIEVERCHEN
+email: kiever.x.chen@gmail.com
+description: "GG"
+header_img: '/assets/header-bg.png'
+
+# author
+author:
+  name: 'Kiever'
+  first_name: 'Kiever'
+  last_name: 'Chen'
+  email: 'kiever.x.chen@gmail.com'
+  facebook_username: 'kiever'
+  github_username: 'kiever'
+  head_img: '/assets/about/profile.jpg'
+  
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: facebook
+    url: http://facebook.com/kiever
+  - title: instagram
+    url: http://instagram.com/kx2chen
+  - title: twitter
+    url: http://twitter.com/kx2chen
+  - title: github
+    url: http://github.com/kiever
+
+# Postal address (add as many lines as necessary)
+address: Toronto, ON
+
+# Build settings
+markdown: kramdown
+permalink: pretty

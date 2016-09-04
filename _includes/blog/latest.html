@@ -1,0 +1,31 @@
+<!-- Latest Posts Section -->
+<section id="latest">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h1>Latest</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<ul class="post-list">
+					{% for post in site.posts limit:10 %}
+					<li class="post-item wow fadeInRight">
+						<div class="post-info">
+							<a>#{{ post.category}}</a>
+							<i class="fa fa-clock-o"></i> <a>{{ post.date | date: "%-d %b %Y" }}</a>
+						</div>
+						<a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+						<div class="post-description">
+							{{ post.excerpt }}
+							{% if site.disqus %}
+								<i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="{{ site.url }}{{ post.url }}">0</span>)</a>
+							{% endif %}
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
